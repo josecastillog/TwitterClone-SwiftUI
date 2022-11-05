@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TweetRowView: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 0) {
             HStack(alignment: .top, spacing: 12) {
                 Circle()
                     .frame(width: 56, height: 56)
@@ -71,7 +71,8 @@ struct TweetRowView: View {
             
             Divider()
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.top, 6.0)
     }
 }
 
