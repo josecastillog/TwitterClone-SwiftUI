@@ -14,6 +14,7 @@
 		FC4342092915F635004A37DB /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4342082915F635004A37DB /* FeedView.swift */; };
 		FC43420C2915F6D5004A37DB /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC43420B2915F6D5004A37DB /* TweetRowView.swift */; };
 		FC43420F2915FC0C004A37DB /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC43420E2915FC0C004A37DB /* MainTabView.swift */; };
+		FC63A71E291739700098EE09 /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC63A71D291739700098EE09 /* SideMenuOptionRowView.swift */; };
 		FCB25E6F29171B99004B59D6 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E6E29171B99004B59D6 /* ExploreView.swift */; };
 		FCB25E7129171BAA004B59D6 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E7029171BAA004B59D6 /* NotificationsView.swift */; };
 		FCB25E7329171BC4004B59D6 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E7229171BC4004B59D6 /* MessagesView.swift */; };
@@ -21,7 +22,6 @@
 		FCB25E7929172483004B59D6 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E7829172483004B59D6 /* TweetFilterViewModel.swift */; };
 		FCB25E7E291729A9004B59D6 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E7D291729A9004B59D6 /* UserRowView.swift */; };
 		FCB25E8429172E7B004B59D6 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E8329172E7B004B59D6 /* SideMenuView.swift */; };
-		FCB25E8629172E8A004B59D6 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E8529172E8A004B59D6 /* SideMenuRowView.swift */; };
 		FCB25E8829172E98004B59D6 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E8729172E98004B59D6 /* SideMenuViewModel.swift */; };
 		FCB25E8A29173090004B59D6 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB25E8929173090004B59D6 /* UserStatsView.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +35,7 @@
 		FC4342082915F635004A37DB /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		FC43420B2915F6D5004A37DB /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
 		FC43420E2915FC0C004A37DB /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		FC63A71D291739700098EE09 /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
 		FCB25E6E29171B99004B59D6 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		FCB25E7029171BAA004B59D6 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		FCB25E7229171BC4004B59D6 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		FCB25E7829172483004B59D6 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		FCB25E7D291729A9004B59D6 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		FCB25E8329172E7B004B59D6 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		FCB25E8529172E8A004B59D6 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		FCB25E8729172E98004B59D6 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		FCB25E8929173090004B59D6 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB25E8329172E7B004B59D6 /* SideMenuView.swift */,
-				FCB25E8529172E8A004B59D6 /* SideMenuRowView.swift */,
+				FC63A71D291739700098EE09 /* SideMenuOptionRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,7 +355,6 @@
 				FCB25E7329171BC4004B59D6 /* MessagesView.swift in Sources */,
 				FCB25E7729171D2A004B59D6 /* ProfileView.swift in Sources */,
 				FC4341F22915F584004A37DB /* ContentView.swift in Sources */,
-				FCB25E8629172E8A004B59D6 /* SideMenuRowView.swift in Sources */,
 				FC43420C2915F6D5004A37DB /* TweetRowView.swift in Sources */,
 				FCB25E7929172483004B59D6 /* TweetFilterViewModel.swift in Sources */,
 				FC4342092915F635004A37DB /* FeedView.swift in Sources */,
@@ -364,6 +363,7 @@
 				FCB25E6F29171B99004B59D6 /* ExploreView.swift in Sources */,
 				FCB25E8829172E98004B59D6 /* SideMenuViewModel.swift in Sources */,
 				FCB25E7E291729A9004B59D6 /* UserRowView.swift in Sources */,
+				FC63A71E291739700098EE09 /* SideMenuOptionRowView.swift in Sources */,
 				FC43420F2915FC0C004A37DB /* MainTabView.swift in Sources */,
 				FCB25E7129171BAA004B59D6 /* NotificationsView.swift in Sources */,
 				FCB25E8A29173090004B59D6 /* UserStatsView.swift in Sources */,
