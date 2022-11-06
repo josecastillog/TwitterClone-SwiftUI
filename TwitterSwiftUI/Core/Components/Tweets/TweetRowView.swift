@@ -16,16 +16,16 @@ struct TweetRowView: View {
                     .foregroundColor(Color(.systemBlue))
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
-                        Text("Bruce Wayne")
+                        Text("Jose Castillo")
                             .font(.subheadline).bold()
-                        Text("@batman")
+                        Text("@josecas0")
                             .foregroundColor(.gray)
                             .font(.caption)
                         Text("2w")
                             .foregroundColor(.gray)
                             .font(.caption)
                     }
-                    Text("I am not Batman people of Twitter.")
+                    Text("Hello everyone, this is a place holder for my tweets.")
                         .font(.subheadline)
                         .multilineTextAlignment(.leading)
                 }

@@ -11,6 +11,7 @@ struct ProfileView: View {
     @State private var selectedFilter: TweetFilterViewModel = .tweets
     @Namespace var animation
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -74,7 +75,7 @@ extension ProfileView {
                 Text("Edit Profie")
                     .font(.subheadline).bold()
                     .frame(width: 120, height: 32)
-                    .foregroundColor(.black)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                     .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.gray, lineWidth: 0.75))
             }
 

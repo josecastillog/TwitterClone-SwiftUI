@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct UserRowView: View {
+    @Environment(\.colorScheme) var colorScheme
     var body: some View {
         HStack(spacing: 12) {
             Circle()
@@ -16,7 +17,7 @@ struct UserRowView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text("Perez")
                     .font(.subheadline).bold()
-                    .foregroundColor(.black)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                 Text("Checo Perez")
                     .font(.subheadline)
                     .foregroundColor(.gray)
