@@ -16,7 +16,7 @@ struct MainTabView: View {
                 .onTapGesture {
                     self.selectedIndex = 0
                 }
-                .tabItem {
+                .tabItem { 
                     Image(systemName: "house")
                 }.tag(0)
             
