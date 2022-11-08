@@ -10,7 +10,9 @@ import SwiftUI
 struct CustomTextField: View {
     let imageName: String
     let placeHolderText: String
+    var isSecuredField: Bool? = false
     @Binding var text: String
+    
     var body: some View {
         VStack {
             HStack {
@@ -20,7 +22,11 @@ struct CustomTextField: View {
                     .frame(width: 20, height: 20)
                     .foregroundColor(Color(.darkGray))
                 
-                TextField(placeHolderText, text: $text)
+                if isSecuredField ?? false {
+                    SecureField(placeHolderText, text: $text)
+                } else {
+                    TextField(placeHolderText, text: $text)
+                }
             }
             
             Divider()
@@ -31,6 +37,9 @@ struct CustomTextField: View {
 
 struct CustomTextField_Previews: PreviewProvider {
     static var previews: some View {
-        CustomTextField(imageName: "envelope", placeHolderText: "Email", text: .constant(""))
+        CustomTextField(imageName: "envelope",
+                        placeHolderText: "Email",
+                        isSecuredField: false,
+                        text: .constant(""))
     }
 }
